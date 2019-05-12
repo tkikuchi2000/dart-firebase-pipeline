@@ -10,7 +10,7 @@ RUN \
     && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
     && apt install -y nodejs \
     && pub global activate webdev \
-    && echo 'export PATH="$PATH":"$HOME/.pub-cache/bin"' >> /root/.bashrc \
+    && ln -s /root/.pub-cache/bin/webdev /usr/bin/ \
     && rm -rf /tmp/* /var/tmp/* /var/cache/distfiles/*
 
 
