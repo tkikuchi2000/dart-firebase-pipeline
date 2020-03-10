@@ -1,5 +1,5 @@
 # Base Image - google/dart
-FROM google/dart
+FROM google/dart:2.7
 
 LABEL maintainer="tkikuchi2000@gmail.com" version="0.1.0"
 
