@@ -7,7 +7,7 @@ LABEL maintainer="tkikuchi2000@gmail.com" version="0.2.0"
 # MkDocs Material
 RUN \
     apt update \
-    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+    && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt install -y nodejs \
     && pub global activate webdev \
     && ln -s /root/.pub-cache/bin/webdev /usr/bin/ \
